@@ -11,3 +11,6 @@ Usage
 To run the script use `python3 asus-list.py` and it will automatically print some useful numbers to the terminal and additionally save the "vulnerable" ips to a file called `results.txt`. You can also configure stuff like file naming or thread count on the top of the script.
 
 It should be quite fast because it uses many threads simultaneously to test the ips. Speed is about `25 ips/s` for me. You can also try to increase the number of threads to tune this further.
+Windows systems
+-----------
+Not sure if the status printing will work properly in windows. Would be cool if someone could verify this.

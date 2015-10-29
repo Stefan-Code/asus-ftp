@@ -12,7 +12,7 @@ from threading import Lock
 # Configuration
 num_workers = 64
 #ips seperated by commas like so: 127.0.0.1, 127.0.0.2, 127.0.0.3
-ip_file = "ips.txt"
+ips_file = "ips.txt"
 #open ips get written there
 results_file = "results.txt"
 
@@ -36,7 +36,7 @@ def allows_anonymous_login(ip):
 
 
 ips = []
-with open(ip_file, "r") as f:
+with open(ips_file, "r") as f:
     contents = f.read()
     ips = [ip.strip() for ip in contents.split(",")]
 total = len(ips)
